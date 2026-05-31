@@ -2,8 +2,6 @@
 .venv
 __pycache__
 
-
-# Robot Framework outputs
 results/
 *.xml
 *.html
