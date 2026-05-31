@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.4 on win32)" generated="2026-05-31T22:04:53.456425" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Appium" source="C:\Users\fahmi\PycharmProjects\robot-appium">
+<suite id="s1-s1" name="Sauce-Labs-Mobile" source="C:\Users\fahmi\PycharmProjects\robot-appium\sauce-labs-mobile">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\fahmi\PycharmProjects\robot-appium\sauce-labs-mobile\tests">
+<suite id="s1-s1-s1-s1" name="Behavior" source="C:\Users\fahmi\PycharmProjects\robot-appium\sauce-labs-mobile\tests\behavior">
+<suite id="s1-s1-s1-s1-s1" name="Sauce Login" source="C:\Users\fahmi\PycharmProjects\robot-appium\sauce-labs-mobile\tests\behavior\sauce_login.robot">
+<kw name="Open Sauce Labs App" owner="common_keywords" type="SETUP">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-31T22:05:03.689679" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-31T22:05:03.689679" elapsed="0.013630">No application is open</status>
+</kw>
+<msg time="2026-05-31T22:05:03.704310" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-31T22:05:03.710535" level="FAIL">WebDriverException: Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3348)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:795)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+	at android.os.Binder.shellCommand(Binder.java:1230)
+	at android.os.Binder.onTransact(Binder.java:1043)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+Stacktrace:
+UnknownError: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3348)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:795)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+	at android.os.Binder.shellCommand(Binder.java:1230)
+	at android.os.Binder.onTransact(Binder.java:1043)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at getResponseForW3CError (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\errors.js:850:36)
+    at asyncHandler (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\build\lib\protocol\protocol.js:476:77)
+The above error is caused by
+Error: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(ActivityManagerService.java:3348)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:795)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+	at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+	at android.os.ShellCommand.exec(ShellCommand.java:38)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+	at android.os.Binder.shellCommand(Binder.java:1230)
+	at android.os.Binder.onTransact(Binder.java:1043)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at ADB.startApp (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\aut.js:106:5)
+    at async AndroidUiautomator2Driver.performPostExecSetup [as performSessionPostExecSetup] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:202:9)
+    at async AndroidUiautomator2Driver.startSession [as startUiAutomator2Session] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:260:5)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:298:28)
+    at async AppiumDriver.createSession (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:272:44)</msg>
+<arg>${APPIUM_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<arg>automationName=${AUTOMATION_NAME}</arg>
+<arg>noReset=${TRUE}</arg>
+<arg>newCommandTimeout=120</arg>
+<doc>Opens a new application to the given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.19/guides/caps/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | No     | alias             |</doc>
+<status status="FAIL" start="2026-05-31T22:04:54.071099" elapsed="9.644730">WebDriverException: Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(Activ...
+    [ Message content over the limit has been removed. ]
+...rver.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at ADB.startApp (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\aut.js:106:5)
+    at async AndroidUiautomator2Driver.performPostExecSetup [as performSessionPostExecSetup] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:202:9)
+    at async AndroidUiautomator2Driver.startSession [as startUiAutomator2Session] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:260:5)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:298:28)
+    at async AppiumDriver.createSession (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:272:44)</status>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="AppiumLibrary">
+<arg>//android.widget.FrameLayout</arg>
+<arg>timeout=15s</arg>
+<doc>Waits until the element specified by the ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" start="2026-05-31T22:05:03.716831" elapsed="0.000000"/>
+</kw>
+<doc>Launch the app and wait for it to load</doc>
+<status status="FAIL" start="2026-05-31T22:04:54.069995" elapsed="9.646836">WebDriverException: Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(Activ...
+    [ Message content over the limit has been removed. ]
+...rver.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at ADB.startApp (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\aut.js:106:5)
+    at async AndroidUiautomator2Driver.performPostExecSetup [as performSessionPostExecSetup] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:202:9)
+    at async AndroidUiautomator2Driver.startSession [as startUiAutomator2Session] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:260:5)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:298:28)
+    at async AppiumDriver.createSession (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:272:44)</status>
+</kw>
+<test id="s1-s1-s1-s1-s1-t1" name="TC_01 - Login with Valid Credentials" line="13">
+<status status="FAIL" start="2026-05-31T22:05:03.716831" elapsed="0.038127">Parent suite setup failed:
+WebDriverException: Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(Activ...
+    [ Message content over the limit has been removed. ]
+...rver.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at ADB.startApp (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\aut.js:106:5)
+    at async AndroidUiautomator2Driver.performPostExecSetup [as performSessionPostExecSetup] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:202:9)
+    at async AndroidUiautomator2Driver.startSession [as startUiAutomator2Session] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:260:5)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:298:28)
+    at async AppiumDriver.createSession (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:272:44)</status>
+</test>
+<test id="s1-s1-s1-s1-s1-t2" name="TC_02 - Cancel Logout" line="20">
+<status status="FAIL" start="2026-05-31T22:05:03.761417" elapsed="0.002963">Parent suite setup failed:
+WebDriverException: Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(Activ...
+    [ Message content over the limit has been removed. ]
+...rver.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at ADB.startApp (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\aut.js:106:5)
+    at async AndroidUiautomator2Driver.performPostExecSetup [as performSessionPostExecSetup] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:202:9)
+    at async AndroidUiautomator2Driver.startSession [as startUiAutomator2Session] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:260:5)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:298:28)
+    at async AppiumDriver.createSession (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:272:44)</status>
+</test>
+<test id="s1-s1-s1-s1-s1-t3" name="TC_03 - Confirm Logout" line="25">
+<status status="FAIL" start="2026-05-31T22:05:03.770088" elapsed="0.076215">Parent suite setup failed:
+WebDriverException: Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(Activ...
+    [ Message content over the limit has been removed. ]
+...rver.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at ADB.startApp (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\aut.js:106:5)
+    at async AndroidUiautomator2Driver.performPostExecSetup [as performSessionPostExecSetup] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:202:9)
+    at async AndroidUiautomator2Driver.startSession [as startUiAutomator2Session] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:260:5)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:298:28)
+    at async AppiumDriver.createSession (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:272:44)</status>
+</test>
+<kw name="Close Application" owner="AppiumLibrary" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2026-05-31T22:05:03.854723" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2026-05-31T22:05:03.853566" elapsed="0.004730">No application is open</status>
+</kw>
+<msg time="2026-05-31T22:05:03.858296" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-31T22:05:03.865892" level="FAIL">No application is open</msg>
+<doc>Closes the current application and the webdriver session.</doc>
+<status status="FAIL" start="2026-05-31T22:05:03.853566" elapsed="0.033958">No application is open</status>
+</kw>
+<doc>Sauce Lab Login Test Case on Mobile Apps Using Appium and Android Emulator
+This Project is build for Fahmi's Testing Practice on Mobile Apps Automation
+Link for Mobile Apps: https://github.com/saucelabs/my-demo-app-android/releases/tag/2.2.0</doc>
+<status status="FAIL" start="2026-05-31T22:04:53.650674" elapsed="10.236850">Suite setup failed:
+WebDriverException: Message: Cannot start the 'com.saucelabs.mydemoapp.android' application. Consider checking the driver's troubleshooting documentation. Original error: Error executing adbExec. Original error: 'Command ''D:\Software\Android\platform-tools\adb.exe' -P 5037 -s emulator-5554 shell am start-activity -W -n com.saucelabs.mydemoapp.android/com.saucelabs.mydemoapp.android.view.activities.MainActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.saucelabs.mydemoapp.android/.view.activities.MainActivity } from null (pid=13020, uid=2000) not exported from uid 10212
+	at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+	at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+	at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+	at com.android.server.wm.ActivityTaskManagerService.startActivityAndWait(ActivityTaskManagerService.java:1582)
+	at com.android.server.am.ActivityManagerService.startActivityAndWait(Activ...
+    [ Message content over the limit has been removed. ]
+...rver.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+	at android.os.Binder.execTransactInternal(Binder.java:1505)
+	at android.os.Binder.execTransact(Binder.java:1444)
+
+    at ADB.startApp (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-adb\build\lib\tools\app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\commands\aut.js:106:5)
+    at async AndroidUiautomator2Driver.performPostExecSetup [as performSessionPostExecSetup] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:202:9)
+    at async AndroidUiautomator2Driver.startSession [as startUiAutomator2Session] (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\uiautomator2-server\session.js:260:5)
+    at async AndroidUiautomator2Driver.createSession (C:\Users\fahmi\.appium\node_modules\appium-uiautomator2-driver\build\lib\driver.js:298:28)
+    at async AppiumDriver.createSession (C:\Users\fahmi\AppData\Roaming\npm\node_modules\appium\build\lib\appium.js:272:44)
+
+Also suite teardown failed:
+No application is open</status>
+</suite>
+<status status="FAIL" start="2026-05-31T22:04:53.646397" elapsed="10.279328"/>
+</suite>
+<status status="FAIL" start="2026-05-31T22:04:53.587021" elapsed="10.342313"/>
+</suite>
+<status status="FAIL" start="2026-05-31T22:04:53.506039" elapsed="10.426437"/>
+</suite>
+<status status="FAIL" start="2026-05-31T22:04:53.461684" elapsed="10.474521"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot-Appium" id="s1" pass="0" fail="3" skip="0">Robot-Appium</stat>
+<stat name="Sauce-Labs-Mobile" id="s1-s1" pass="0" fail="3" skip="0">Robot-Appium.Sauce-Labs-Mobile</stat>
+<stat name="Tests" id="s1-s1-s1" pass="0" fail="3" skip="0">Robot-Appium.Sauce-Labs-Mobile.Tests</stat>
+<stat name="Behavior" id="s1-s1-s1-s1" pass="0" fail="3" skip="0">Robot-Appium.Sauce-Labs-Mobile.Tests.Behavior</stat>
+<stat name="Sauce Login" id="s1-s1-s1-s1-s1" pass="0" fail="3" skip="0">Robot-Appium.Sauce-Labs-Mobile.Tests.Behavior.Sauce Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-05-31T22:05:03.704310" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2026-05-31T22:05:03.858296" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
