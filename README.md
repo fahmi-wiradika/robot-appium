@@ -178,5 +178,3 @@ Use the activity shown in the resolver table (e.g. `SplashActivity`) as your `${
 - **AppiumLibrary (Robot Framework)**: https://serhatbolsu.github.io/robotframework-appiumlibrary/AppiumLibrary.html
 - **Sauce Labs Demo App Releases**: https://github.com/saucelabs/my-demo-app-android/releases
 - **Project Documentation**: https://fahmi-wiradika.github.io
-
-## 📄 License
