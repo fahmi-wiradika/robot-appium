@@ -10,7 +10,7 @@ ${DEVICE_NAME}        emulator-5554
 
 # --- App Config ---
 ${APP_PACKAGE}    com.saucelabs.mydemoapp.android
-${APP_ACTIVITY}    com.saucelabs.mydemoapp.android.view.activities.MainActivity      # check with: adb shell dumpsys window | grep mCurrentFocus
+${APP_ACTIVITY}    com.saucelabs.mydemoapp.android.view.activities.SplashActivity      # check with: adb shell dumpsys window | grep mCurrentFocus
 
 # --- Server ---
 ${APPIUM_URL}           http://localhost:4723
