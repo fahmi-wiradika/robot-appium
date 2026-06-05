@@ -13,8 +13,6 @@ Open Sauce Labs App
     ...    appPackage=${APP_PACKAGE}
     ...    appActivity=${APP_ACTIVITY}
     ...    automationName=${AUTOMATION_NAME}
-    ...    noReset=${TRUE}
-    ...    newCommandTimeout=120
     Wait Until Page Contains Element    //android.widget.FrameLayout    timeout=15s
 
 Close Sauce Labs App
