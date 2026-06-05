@@ -1,0 +1,10 @@
+# applitools.yaml
+api_key: ENTER_APPLITOOLS_API_KEY 
+
+app_name: Sauce Labs Demo App
+
+batch:
+  name: Robot Appium - Login Suite
+
+mobile_native:
+  save_new_tests: true
