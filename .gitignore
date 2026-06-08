@@ -5,3 +5,6 @@ __pycache__
 results/
 *.xml
 *.html
+
+visual_images/actual/
+visual_images/diff/
