@@ -1,6 +1,6 @@
 # dependencies
 robotframework
 robotframework-appiumlibrary
-eyes-robotframework
-robotframework-eyes
+eyes-robotframework                 # This for Applitools
+robotframework-eyes                 # This for RobotEyes
 Appium-Python-Client
